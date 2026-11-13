@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: assessment-app
+  name: my-assessment-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: assessment-app
+      app: my-assessment-app
   template:
     metadata:
       labels:
-        app: assessment-app
+        app: my-assessment-app
     spec:
       containers:
         - name: app
-          image: ://amazonaws.com
+          image: :sakshika/my-assessment-app:IMAGE_TAG
